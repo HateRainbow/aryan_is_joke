@@ -1,0 +1,48 @@
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button:focus {
+  animation: vanish 1s;
+  animation-fill-mode: forwards;
+}
+
+.container {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@keyframes vanish {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes glow-up {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
